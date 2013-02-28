@@ -1,0 +1,49 @@
+/*
+    Color Scheme: red    
+*/
+#content { background-color:#fff; }
+		                                                
+p, li, address, label, td, th, .sidebar li a, #footer-nav li a, p.title-product a, .widget_price_range a, #product-specials div { color:#535252; }
+a, #recentcomments a, .sidebar .tweets-widget a #recentcomments a:hover, .sidebar .tweets-widget a:hover, .widget_price_range a:hover, 
+.widget_price_range a:hover, .sidebar li a:hover { color:#b91003; } 
+a:hover, #footer-nav li a:hover, p.title-product a:hover { color:#b91003; } 
+
+#nav li a { color:#858484; }
+#nav li a:hover, #nav li.current-menu-item a, #nav li.current-menu-parent a { color:#4F4F4F; }
+#nav ul.sub-menu li a span { color:#515050; }   
+
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, span.highlight-text, .name-testimonial span.title,                    
+h1.red-normal, h2.red-normal, h3.red-normal, h4.red-normal, h5.red-normal, h6.red-normal, #footer-nav li.current-menu-item a,
+.productdisplay div.producttext h2.prodtitles, .productdisplay div.producttext h4, .productdisplay div.producttext .rating strong,
+body.wpsc #content .sidebar h3, #slider .panel .hentry h2, .sidebar-small-size h3, .sidebar-small-size h2 
+{ color:#b91003; }  
+
+h1, h2, h3, h4, h5, h6 { color:#535252; }
+
+input.email-newsletter { background-color:#f7cfd0; }
+input.subscribe-newsletter { background-color:#600203; }
+
+#logo a { background-image:url('/public/img/logo2.png'); }
+#home-section { background-image:url('/public/img/home-section-bg.png'); }
+#home-section .inner { background-image:url('/public/img/gradient-home-section.png'); }
+
+#slider .pagination a { background-image:url('/public/img/pag-slider.png'); }
+
+#footer h2 { color:#141414; }
+.flickr img { background-color:#BCBBBB;border-color:#ECECEC; }
+#quick-contact-form input, #quick-contact-form textarea { background-color:#AEADAD;border-color:#E1E1E1; }
+
+#copyright { background-color:#525050; }
+
+/*typography*/
+.yes_js p, li, .yes_js address, .yes_js label, .yes_js td, .yes_js th, .yes_js .sidebar li a { font-size:14px; }
+.yes_js h1 { font-size:37px; }
+.yes_js h2 { font-size:33px; }
+.yes_js h3 { font-size:29px; }
+.yes_js h4 { font-size:25px; }
+.yes_js h5 { font-size:21px; }
+.yes_js h6 { font-size:19px; }
+
+.yes_js .sidebar-small-size h3 { font-size:21px; }
+
+div.cartcount { font-size:13px; }
