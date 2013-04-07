@@ -65,10 +65,9 @@
         }
     </style>
     <!--[if IE]>
-    <link rel="stylesheet" href="/public/css/ie.css" type="text/css" media="screen, projection"/>
-    <![endif]--><!--[if IE 7]>
-    <link rel="stylesheet" href="/public/css/ie7.css" type="text/css" media="screen"/>
-    <![endif]-->
+    <link rel="stylesheet" href="/public/css/ie.css" type="text/css" media="screen, projection"/><![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="/public/css/ie7.css" type="text/css" media="screen"/><![endif]-->
 
     <!-- [favicon] begin -->
     <link rel="shortcut icon" type="image/x-icon" href="/public/img/favicon.ico"/>
@@ -119,145 +118,10 @@
 <!-- END TOPBAR -->
 
 <!-- START HEADER -->
-<div id="header">
-
-    <div class="inner">
-
-
-        <div class="clear "></div>
-
-        <!-- START LOGO -->
-        <div id="logo">
-            <a href="" title="eugensite &#8211; Get Social!">eugensite &#8211; Get
-                Social!</a>
-        </div>
-        <!-- END LOGO -->
-
-        <!-- START NAVIGATION -->
-        <div id="nav" class="menu-navigation-container">
-            <ul id="menu-navigation" class="level-1">
-                <li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8 current_page_item">
-                    <a href="/">Home</a></li>
-                <li id="menu-item-376" class="menu-item menu-item-type-post_type menu-item-object-page">
-                    <a title="Buy Facebook Likes" href="/buy-facebook-likes/">Facebook Likes</a>
-                </li>
-                <li id="menu-item-375" class="menu-item menu-item-type-post_type menu-item-object-page">
-                    <a title="Buy Google Plus Ones" href="/buy-google-plus-ones/">Google +1&#8242;s</a>
-                </li>
-                <li id="menu-item-374" class="menu-item menu-item-type-post_type menu-item-object-page">
-                    <a title="Buy Twitter Followers" href="/buy-twitter-followers/">Twitter
-                        Followers</a></li>
-            </ul>
-        </div>
-        <!-- END NAVIGATION -->
-
-        <div class="clear space"></div>
-
-
-        <!-- START SLIDER -->
-        <div id="slider">
-
-            <div class="images">
-                <!-- START PANEL -->
-                <div class="panel first">
-
-                    <div class="featured-image">
-                        <img src="/public/img/cart-products.png" alt="eugensite - Get Social [Become Socially Engaged ]"/>
-                    </div>
-
-                    <div class="hentry">
-                        <h2>eugensite - Get Social </h2>                            <h4>Become Socially
-                        Engaged </h4>
-
-                        <p>Get social proof to your pages with our 100% satisfaction guaranteed services; Buy Facebook
-                            Likes, Buy Google plus Ones & Twitter Followers. Take a tour in our vast social services -
-                            The Best Quality, The cheapest Prices! eugensite </p>
-                    </div>
-                </div>
-                <!-- END PANEL --><!-- START PANEL -->
-                <div class="panel">
-
-                    <div class="featured-image">
-                        <img src="/public/img/sg.png" alt="Best customer Support! [100% Satisfaction Guaranteed!]"/>
-                    </div>
-
-                    <div class="hentry">
-                        <h2>Best customer Support! </h2>                            <h4>100% Satisfaction
-                        Guaranteed!</h4>
-
-                        <p>We are here 24/7 for any question/reply about our services! Because when you buy our
-                            excellent service, you buy also our excellent customer support, that will answer you for
-                            every question you may have, mostly within 24 hours! </p>
-                    </div>
-                </div>
-                <!-- END PANEL --><!-- START PANEL -->
-                <div class="panel">
-
-                    <div class="featured-image">
-                        <img src="/public/img/wb-ss.png" alt="Our New Website [Smarter, Faster]"/>
-                    </div>
-
-                    <div class="hentry">
-                        <h2>Our New Website </h2>                            <h4>Smarter, Faster</h4>
-
-                        <p>For all our new & existing customers, this is our new website platform! The advanced and
-                            innovative technology allows us to receive and handle orders faster than ever before! </p>
-                    </div>
-                </div>
-                <!-- END PANEL -->
-            </div>
-
-            <!-- START PAGINATION -->
-            <div class="controls">
-                <a href="#" title="Pause" id="slider-pause"><img src="/public/img/slider-pause.png" alt="Pause"/></a>
-                <a href="#" title="Play" id="slider-play"><img src="/public/img/slider-play.png" alt="Play"/></a>
-            </div>
-            <div class="pagination"></div>
-            <!-- END PAGINATION -->
-
-
-            <script type="text/javascript">
-                jQuery(document).ready(function ($) {
-                    if ($('#slider .images .panel').length != 0) {
-                        $('#slider .images').cycle({
-                            fx:'scrollUp',
-                            speed:1500,
-                            timeout:6500,
-                            pager:'.pagination',
-                            cleartype:true
-                        });
-
-                        $('#slider-pause').show();
-
-                        $('#slider-pause').click(function () {
-                            $('#slider .images').cycle('pause');
-                            $(this).hide();
-                            $('#slider-play').show();
-                            return false;
-                        });
-
-                        $('#slider-play').click(function () {
-                            $('#slider .images').cycle('resume');
-                            $(this).hide();
-                            $('#slider-pause').show();
-                            return false;
-                        });
-                    }
-                });
-            </script>
-
-        </div>
-
-        <!-- END SLIDER -->
-
-
-    </div>
-
-
-</div>
+{% include '/_includes/header.html.twig' %}
 <!-- END HEADER -->
 
-<div class="clear "></div>
+<div class="clear {{ s1 }}"></div>
 
 
 <!-- START CONTENT -->
@@ -292,8 +156,7 @@
 
     <p class="title-product">
 
-        <a class="wpsc_product_title" href="/home/facebook-likes/1000-facebook-likes/">1,000
-            Facebook Likes</a>
+        <a class="wpsc_product_title" href="/home/facebook-likes/1000-facebook-likes/">1,000 Facebook Likes</a>
     </p>
 
 
@@ -318,8 +181,7 @@
 
     <p class="title-product">
 
-        <a class="wpsc_product_title" href="/home/facebook-likes/3000-facebook-likes/">3,000
-            Facebook Likes</a>
+        <a class="wpsc_product_title" href="/home/facebook-likes/3000-facebook-likes/">3,000 Facebook Likes</a>
     </p>
 
 
@@ -344,8 +206,7 @@
 
     <p class="title-product">
 
-        <a class="wpsc_product_title" href="/home/facebook-likes/5000-facebook-likes/">5,000
-            Facebook Likes</a>
+        <a class="wpsc_product_title" href="/home/facebook-likes/5000-facebook-likes/">5,000 Facebook Likes</a>
     </p>
 
 
@@ -370,8 +231,7 @@
 
     <p class="title-product">
 
-        <a class="wpsc_product_title" href="/home/google-plus-ones/250-google-votes/">250 Google
-            Votes</a>
+        <a class="wpsc_product_title" href="/home/google-plus-ones/250-google-votes/">250 Google Votes</a>
     </p>
 
 
@@ -398,8 +258,7 @@
 
     <p class="title-product">
 
-        <a class="wpsc_product_title" href="/home/twitter-followers/5000-twitter-followers/">5,000
-            Twitter Followers</a>
+        <a class="wpsc_product_title" href="/home/twitter-followers/5000-twitter-followers/">5,000 Twitter Followers</a>
     </p>
 
 
@@ -424,8 +283,8 @@
 
     <p class="title-product">
 
-        <a class="wpsc_product_title" href="/home/twitter-followers/10000-twitter-followers/">10,000
-            Twitter Followers</a>
+        <a class="wpsc_product_title" href="/home/twitter-followers/10000-twitter-followers/">10,000 Twitter
+            Followers</a>
     </p>
 
 
@@ -450,8 +309,7 @@
 
     <p class="title-product">
 
-        <a class="wpsc_product_title" href="/home/google-plus-ones/500-google-votes/">500 Google
-            Votes</a>
+        <a class="wpsc_product_title" href="/home/google-plus-ones/500-google-votes/">500 Google Votes</a>
     </p>
 
 
@@ -478,8 +336,7 @@
 
     <p class="title-product">
 
-        <a class="wpsc_product_title" href="/home/google-plus-ones/1000-google-votes/">1,000
-            Google Votes</a>
+        <a class="wpsc_product_title" href="/home/google-plus-ones/1000-google-votes/">1,000 Google Votes</a>
     </p>
 
 
@@ -508,8 +365,7 @@
 
     <p class="title-product">
 
-        <a class="wpsc_product_title" href="/home/facebook-likes/10000-facebook-likes/">10,000
-            Facebook Likes</a>
+        <a class="wpsc_product_title" href="/home/facebook-likes/10000-facebook-likes/">10,000 Facebook Likes</a>
     </p>
 
 
@@ -534,8 +390,7 @@
 
     <p class="title-product">
 
-        <a class="wpsc_product_title" href="/home/facebook-likes/25000-facebook-likes/">25,000
-            Facebook Likes</a>
+        <a class="wpsc_product_title" href="/home/facebook-likes/25000-facebook-likes/">25,000 Facebook Likes</a>
     </p>
 
 
@@ -560,8 +415,7 @@
 
     <p class="title-product">
 
-        <a class="wpsc_product_title" href="/home/facebook-likes/5000-usa-facebook-likes/">5,000
-            USA Facebook Likes</a>
+        <a class="wpsc_product_title" href="/home/facebook-likes/5000-usa-facebook-likes/">5,000 USA Facebook Likes</a>
     </p>
 
 
@@ -586,8 +440,7 @@
 
     <p class="title-product">
 
-        <a class="wpsc_product_title" href="/home/facebook-likes/1000-usa-facebook-likes/">1,000
-            USA Facebook Likes</a>
+        <a class="wpsc_product_title" href="/home/facebook-likes/1000-usa-facebook-likes/">1,000 USA Facebook Likes</a>
     </p>
 
 
@@ -620,8 +473,7 @@
 
 <div class="wpsc_page_numbers_bottom general-pagination">
     Pages: <span class='current'>1</span>
-    <a href="/page/2" rel="next" title="Page 2">2</a><a href="/page/2" rel="next" title="Next Page">Next
-    &gt;</a></div>
+    <a href="/page/2" rel="next" title="Page 2">2</a><a href="/page/2" rel="next" title="Next Page">Next &gt;</a></div>
 <!--close wpsc_page_numbers_bottom-->
 
 
@@ -648,8 +500,7 @@
                     <a title="Buy Google Plus Ones" href="/buy-google-plus-ones/">Google + 1&#8242;s</a>
                 </li>
                 <li id="menu-item-373" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-373">
-                    <a title="Buy Twitter Followers" href="/buy-twitter-followers/">Twitter
-                        Followers</a></li>
+                    <a title="Buy Twitter Followers" href="/buy-twitter-followers/">Twitter Followers</a></li>
                 <li id="menu-item-987" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-987">
                     <a href="/category/blog/">Blog</a></li>
             </ul>

@@ -1,0 +1,90 @@
+<div id="slider">
+
+    <div class="images">
+        <!-- START PANEL -->
+        <div class="panel first">
+
+            <div class="featured-image">
+                <img src="/public/img/cart-products.png" alt="eugensite - Get Social [Become Socially Engaged ]"/>
+            </div>
+
+            <div class="hentry">
+                <h2>eugensite - Get Social </h2>                            <h4>Become Socially Engaged </h4>
+
+                <p>Get social proof to your pages with our 100% satisfaction guaranteed services; Buy Facebook Likes,
+                    Buy Google plus Ones & Twitter Followers. Take a tour in our vast social services - The Best
+                    Quality, The cheapest Prices! eugensite </p>
+            </div>
+        </div>
+        <!-- END PANEL --><!-- START PANEL -->
+        <div class="panel">
+
+            <div class="featured-image">
+                <img src="/public/img/sg.png" alt="Best customer Support! [100% Satisfaction Guaranteed!]"/>
+            </div>
+
+            <div class="hentry">
+                <h2>Best customer Support! </h2>                            <h4>100% Satisfaction Guaranteed!</h4>
+
+                <p>We are here 24/7 for any question/reply about our services! Because when you buy our excellent
+                    service, you buy also our excellent customer support, that will answer you for every question you
+                    may have, mostly within 24 hours! </p>
+            </div>
+        </div>
+        <!-- END PANEL --><!-- START PANEL -->
+        <div class="panel">
+
+            <div class="featured-image">
+                <img src="/public/img/wb-ss.png" alt="Our New Website [Smarter, Faster]"/>
+            </div>
+
+            <div class="hentry">
+                <h2>Our New Website </h2>                            <h4>Smarter, Faster</h4>
+
+                <p>For all our new & existing customers, this is our new website platform! The advanced and innovative
+                    technology allows us to receive and handle orders faster than ever before! </p>
+            </div>
+        </div>
+        <!-- END PANEL -->
+    </div>
+
+    <!-- START PAGINATION -->
+    <div class="controls">
+        <a href="#" title="Pause" id="slider-pause"><img src="/public/img/slider-pause.png" alt="Pause"/></a>
+        <a href="#" title="Play" id="slider-play"><img src="/public/img/slider-play.png" alt="Play"/></a>
+    </div>
+    <div class="pagination"></div>
+    <!-- END PAGINATION -->
+
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            if ($('#slider .images .panel').length != 0) {
+                $('#slider .images').cycle({
+                    fx:'scrollUp',
+                    speed:1500,
+                    timeout:6500,
+                    pager:'.pagination',
+                    cleartype:true
+                });
+
+                $('#slider-pause').show();
+
+                $('#slider-pause').click(function () {
+                    $('#slider .images').cycle('pause');
+                    $(this).hide();
+                    $('#slider-play').show();
+                    return false;
+                });
+
+                $('#slider-play').click(function () {
+                    $('#slider .images').cycle('resume');
+                    $(this).hide();
+                    $('#slider-pause').show();
+                    return false;
+                });
+            }
+        });
+    </script>
+
+</div>
