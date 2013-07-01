@@ -37,10 +37,10 @@ input.subscribe-newsletter { background-color:#600203; }
 
 /*typography*/
 .yes_js p, li, .yes_js address, .yes_js label, .yes_js td, .yes_js th, .yes_js .sidebar li a { font-size:14px; }
-.yes_js h1 { font-size:37px; }
-.yes_js h2 { font-size:33px; }
-.yes_js h3 { font-size:29px; }
-.yes_js h4 { font-size:25px; }
+.yes_js h1 { font-size:30px; }
+.yes_js h2 { font-size:26px; }
+.yes_js h3 { font-size:22px; }
+.yes_js h4 { font-size:21px; }
 .yes_js h5 { font-size:21px; }
 .yes_js h6 { font-size:19px; }
 

@@ -6,10 +6,5 @@
  * Time: 0:17
  * To change this template use File | Settings | File Templates.
  */
-require_once dirname(__FILE__) . '/../Twig/Autoloader.php';
-Twig_Autoloader::register();
-$loader = new Twig_Loader_Filesystem('../templates');
-$twig = new Twig_Environment($loader, array('debug' => true));
-$name = str_replace(dirname(__FILE__), '', __FILE__);
-$name = str_replace('.php', '', $name);
-echo $twig->render($name . '.html.twig');
+require_once '_base.php';
+render(basename(__FILE__));
