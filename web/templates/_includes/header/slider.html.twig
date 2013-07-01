@@ -1,0 +1,101 @@
+<div id="slider">
+
+    <div class="images">
+        <!-- START PANEL -->
+        <div class="panel first">
+
+            <div class="featured-image">
+                <img src="/public/img/piar_vkontakte.png" title="Пиар групп вконтакте" alt="Пиар, pr, групп, вконтакте, vkontakte"/>
+            </div>
+
+            <div class="hentry">
+                <h2>Пиар групп вконтакте </h2>
+
+                <p> <strong>Пиар групп вконтакте</strong> - одна из самых востребованных услуг Рунета. Агенство SocPR предлагает
+                    вам интересные и экономически выгодные решения в области рекламы и пиара в социальной сети
+                    Вконтакте. Мы эффективно повышаем количество живых подписчиков в вашу группу, благодаря чему
+                    вы получаете ТОП позиции в поисковой выдаче. Мы готовы привлечь десятки тысяч потенциальных
+                    клиентов в вашу группу. Пиар группы вконтакте - отличный инструмент продвижения брэнда,
+                    компании, бизнеса и просто личных страниц. </p>
+            </div>
+        </div>
+        <!-- END PANEL -->
+
+        <!-- START PANEL -->
+        <div class="panel">
+
+            <div class="featured-image">
+                <img src="/public/img/socpr.png" title="Агенство SocPR - гарантия качества" alt="Агенство, socpr, гарантия, 100%, качество"/>
+            </div>
+
+            <div class="hentry">
+                <h2>Агенство SocPR</h2>
+                <p> <strong>Агенство SocPR</strong> - это группа профессионалов, специализирующихся на комплексном продвижении и
+                    пиаре групп вконтакте и Facebook, каналов в Youtube, страниц в Twitter. Мы предлагаем
+                    индивидуальные и интересные  решения для частных лиц, организаций, бизнеса. Агенство SocPR
+                    поможет произвести неизгладимое впечатление на ваших клиентов и сделает популярными во всех
+                    социальных сетях России и мира. Наша цель -  глобальный пиар в интернете.</p>
+            </div>
+        </div>
+        <!-- END PANEL -->
+
+        <!-- START PANEL -->
+        <div class="panel">
+
+            <div class="featured-image">
+                <img src="/public/img/piar_youtube_facebook_twitter.png" title="Пиар Youtube, Facebook, Twitter" alt="Пиар, PR, Youtube, Facebook, Twitter"/>
+            </div>
+
+            <div class="hentry">
+                <h2>Пиар Youtube</h2>
+
+                <p> <strong>Пиар Youtube</strong> - услуга, позволяющая в одночасье сделать вас популярным и узнаваемым во всем
+                    мире. Мы привлекаем на ваше видео миллионы реальных просмотров с социальных сетей.
+                    Осуществляем вывод в ТОП на главную страницу Youtube. Пиар видео в Youtube -  это уникальная
+                    возможность заявить о себе широкой публике. Агенство SocPR предлагает комплексные решения по
+                    продвижению ваших видео и канала в Youtube.</p>
+            </div>
+        </div>
+        <!-- END PANEL -->
+    </div>
+
+    <!-- START PAGINATION -->
+    <div class="controls">
+        <a href="#" title="Pause" id="slider-pause"><img src="/public/img/slider-pause.png" alt="Pause"/></a>
+        <a href="#" title="Play" id="slider-play"><img src="/public/img/slider-play.png" alt="Play"/></a>
+    </div>
+    <div class="pagination"></div>
+    <!-- END PAGINATION -->
+
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            if ($('#slider .images .panel').length != 0) {
+                $('#slider .images').cycle({
+                    fx:'scrollUp',
+                    speed:1500,
+                    timeout:6500,
+                    pager:'.pagination',
+                    cleartype:true
+                });
+
+                $('#slider-pause').show();
+
+                $('#slider-pause').click(function () {
+                    $('#slider .images').cycle('pause');
+                    $(this).hide();
+                    $('#slider-play').show();
+                    return false;
+                });
+
+                $('#slider-play').click(function () {
+                    $('#slider .images').cycle('resume');
+                    $(this).hide();
+                    $('#slider-pause').show();
+                    return false;
+                });
+            }
+        });
+    </script>
+
+</div>

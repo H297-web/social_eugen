@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /Twig/
+Disallow: /css/
+Disallow: /js/
+Disallow: /Gotovye_sayty.php
+Allow: /img
+ 
+User-agent: Yandex
+Disallow: /Twig/
+Disallow: /css/
+Disallow: /js/
+Disallow: /Gotovye_sayty.php
+Allow: /img
+
+User-agent: GoogleBot
+Disallow: /Twig/
+Disallow: /css/
+Disallow: /js/
+Disallow: /Gotovye_sayty.php
+Allow: /img
+
+Host: socprka.ru
+Sitemap: http://socprka.ru/sitemap.xml
